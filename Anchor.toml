@@ -1,12 +1,12 @@
-[programs.localnet]
-gmchat = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+[programs.devnet]
+gmchat = "7DWkoJ87sdv4cMTYbWvB5uxLn6nEZwKAbSqkxCzm9oqr"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/maverick/.config/solana/id.json"
 
 [scripts]
-test = "yarn run mocha -t 1000000 tests/"
+test = "node tests/gmchat.js"
